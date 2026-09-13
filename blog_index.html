@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepERC</title>
+<meta name="description" content="Notes from building DeepERC, a schematic checker that reads KiCad netlists and looks for defects that electrical rule check passes.">
+<link rel="canonical" href="https://deeperc.github.io/blog/">
+<style>
+:root { --ink:#0f172a; --slate:#334155; --mute:#64748b; --line:#cbd5e1; }
+* { box-sizing: border-box; }
+body { margin:0; padding:3.5rem 1.25rem 6rem; background:#fff; color:var(--ink);
+  font:400 17px/1.65 ui-serif, Georgia, "Times New Roman", serif; }
+main { max-width: 40rem; margin:0 auto; }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.01em; }
+h2 { font-size:1.2rem; margin:2.6rem 0 .7rem; line-height:1.3; }
+.byline { color:var(--mute); font-size:.92rem; margin:0 0 2.4rem;
+  padding-bottom:1.4rem; border-bottom:1px solid var(--line); }
+p { margin:0 0 1.05rem; }
+ul { margin:0 0 1.05rem; padding-left:1.2rem; }
+li { margin:0 0 .5rem; }
+a { color:#1d4ed8; }
+code, pre { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+code { font-size:.86em; color:var(--slate); background:#f1f5f9;
+  padding:.1em .34em; border-radius:3px; }
+pre { font-size:.82rem; line-height:1.5; background:#f8fafc; color:var(--slate);
+  border:1px solid var(--line); border-radius:4px; padding:1rem;
+  overflow-x:auto; white-space:pre; }
+pre code { background:none; padding:0; }
+figure { margin:1.8rem 0; }
+figure img { width:100%; height:auto; display:block; }
+figcaption { color:var(--mute); font-size:.82rem; line-height:1.45;
+  margin-top:.6rem; font-style:italic; }
+.pending pre { border-style:dashed; color:var(--mute); font-style:italic; }
+table { border-collapse:collapse; width:100%; font-size:.84rem;
+  font-family: ui-sans-serif, system-ui, sans-serif; }
+th { text-align:left; border-bottom:1.5px solid var(--slate); padding:.45rem .5rem; }
+th + th, td + td { text-align:center; }
+td { border-bottom:1px solid var(--line); padding:.45rem .5rem; }
+tr.total td { font-weight:700; border-top:1.5px solid var(--slate);
+  border-bottom:1.5px solid var(--slate); }
+.banner { border:1px solid #f59e0b; background:#fffbeb; color:#92400e;
+  font-size:.85rem; padding:.8rem 1rem; border-radius:4px; margin:0 0 2rem; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink:#e2e8f0; --slate:#cbd5e1; --mute:#94a3b8; --line:#334155; }
+  body { background:#0b1220; }
+  code { background:#1e293b; } pre { background:#111a2e; }
+  a { color:#93c5fd; }
+}
+
+.site h1 { margin-bottom:.5rem; }
+.site p { color:var(--mute); font-size:.95rem; }
+.site { padding-bottom:1.4rem; border-bottom:1px solid var(--line);
+  margin-bottom:2.2rem; }
+.post { margin:0 0 2rem; }
+.post h2 { margin:0 0 .3rem; font-size:1.15rem; }
+.post h2 a { text-decoration:none; }
+.post .date { color:var(--mute); font-size:.82rem;
+  font-family: ui-sans-serif, system-ui, sans-serif; }
+.post p { margin:.4rem 0 0; }
+</style>
+</head>
+<body>
+<main>
+<header class="site">
+<h1>DeepERC</h1>
+<p>Notes from building DeepERC, a schematic checker that reads KiCad netlists and looks for defects that electrical rule check passes. The source is at <a href="https://github.com/deeperc/deeperc">github.com/deeperc/deeperc</a>.</p>
+</header>
+<article class="post">
+<h2><a href="/blog/three-bugs-that-passed-erc/">Three bugs that passed ERC</a></h2>
+<div class="date">2026-09-13</div>
+<p>Three defects in production open-hardware designs that electrical rule check passes, the pipeline that found them, and the measured recall.</p>
+</article>
+</main>
+</body>
+</html>
