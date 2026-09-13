@@ -1,2 +1,5 @@
 *:Zone.Identifier
 build_blog_index.py
+build_lt13_html.py
+build_lt13_pdf.py
+lt13_blog_draft_v3.md
